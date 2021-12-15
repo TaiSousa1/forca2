@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html  style="width: 100%; height: 100%;">
+<head> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jogo da forca</title>
+    <script src="functions.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <div id="principal">
+        <div id="titulo">Jogo da Forca </div>
+        <div id="hud">
+            <div id = "palavra"> A palavra é: </div>
+            <div id = "placar"> Letras Erradas : <f id="falhas"></f></div>
+            <div id="resultado"></div>
+            
+            <div id = "palavrachave"></div>
+            <span id="faseAtual" class="desabilitado"></span>
+
+	<span id="numTentativas" class="desabilitado"></span>
+	<div id="perguntas">
+		<div class="preenchimento">
+			<label class="rotulo">Letra: </label>
+			<input id="entradaLetra" type="text" class="entrada" size="1" maxlength="1" title="Informe uma letra" />
+			<button id="bntTentar" class="bnt" type="button" value="Tentar!" title="Clique aqui para usar sua letra">Tentar!</button>
+			<br />
+			<label class="rotulo">Resposta: </label>
+			<input id="entradaResposta" type="text" class="entrada" title="Informe a resposta" />
+			<button id="bntResponder" class="bnt" type="button" value="Responder!" title="Clique aqui para responder">Responder!</button>
+			<br />
+			<div id="palavra" class="letras">
+			<span id="letraEscolhida"></span>
+			<br />
+			<span id="letraErrada"></span>
+			<br />
+			<span id="respostaInformada"></span>
+			<br />
+			<span id="resposta"></span>
+			<br />
+			
+			<button id="bntNovoJogo" class="bnt proximo" type="button" value="Próxima Palavra" title="Clique aqui para avançar a fase">Próxima Palavra</button>
+				
+		</div>
+	</div>
+    </div>
+			</div>
+	 <div id="forca" class="desenho"></div>
+</div>
+        </div>
+        <br>
+        <!-- Div para conter o Teclado-->
+        <div id="teclado">
+            
+        </div>
+    </div>
+    <div id="again"></div>
+</body>
+</html>
+
